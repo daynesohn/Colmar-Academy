@@ -39,11 +39,10 @@ body {
 .banner {
   max-width: 100%;
   background-color: #bdc3c7;
-  padding-top: 64px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 2rem 1.5rem;
+  padding: 6rem 1.5rem 2rem 0.1rem;
 }
 
 .banner img {
@@ -71,5 +70,5 @@ body {
 
 /* INFORMATION SECTION STYLES*/
 .secondary {
-  
+
 }
