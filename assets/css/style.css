@@ -11,6 +11,10 @@ body {
   display: none;
 }
 
+.alternate {
+  background-color: #d2d6d9;
+}
+
 /*HEADER STYLES*/
 .header {
   width: 100%;
@@ -129,10 +133,6 @@ body {
   font-weight: 600;
 }
 
-.guest {
-  background-color: #d2d6d9;
-}
-
 .info img {
   max-width: 27%;
   height: auto;
@@ -158,15 +158,10 @@ body {
   justify-content: center;
 }
 
-.row-1 {
+.row {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
-}
-
-.row-2 {
-  display: flex;
-  justify-content: center
 }
 
 .program {
@@ -192,4 +187,65 @@ body {
 .course h4 {
   font-size: 18px;
   font-weight: bold;
+}
+
+/*THESIS STYLES*/
+.thesis {
+  width: 100%;
+}
+
+.thesis h1 {
+  margin: 0;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+}
+
+.thesis-left {
+  max-width: 60%;
+  padding: 32px 16px 24px 24px;
+}
+
+.thesis-right {
+  width: 423px;
+  margin-top: 2rem;
+}
+
+.thesis-right .info {
+  border: none;
+}
+
+.thesis-text {
+  font-size: 13px;
+  font-weight: 200;
+}
+
+.thesis-text h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+/*FOOTER STYLES*/
+footer {
+  border-top: 1px solid #d2d6d9;
+  font-size: 11px;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-nav p {
+  padding: 0 12px;
 }
