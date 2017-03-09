@@ -138,3 +138,58 @@ body {
   height: auto;
   padding: 16px;
 }
+
+/*LEARNING SECTION*/
+.learning {
+  background-color: #d2d6d9;
+  margin-top: 0px;
+}
+
+.learning h1 {
+  margin: 0;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.programs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row-1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.row-2 {
+  display: flex;
+  justify-content: center
+}
+
+.program {
+  min-height: 18rem;
+  width: 18rem;
+  margin-right: 2rem;
+  background-color: #fff;
+}
+
+.program img {
+  width: 100%;
+  height: auto;
+}
+
+.course {
+  background-color: #fff;
+  max-width: 100%;
+  padding: 0rem 0.75rem;
+  font-size: 13px;
+  font-weight: 200;
+}
+
+.course h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
