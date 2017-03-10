@@ -11,6 +11,10 @@ body {
   display: none;
 }
 
+.banner-mobile {
+  display: none;
+}
+
 .alternate {
   background-color: #d2d6d9;
 }
@@ -44,10 +48,36 @@ body {
   padding: 0 16px;
 }
 
+@media only screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .header-mobile {
+    max-width: 480px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-mobile img {
+    padding: 1rem 3rem;
+  }
+}
+
 /*PAGE WRAPPER*/
 .content {
   position: absolute;
   top: 64px;
+}
+
+@media only screen and (max-width: 480px) {
+  .content {
+    max-width: 480px;
+  }
 }
 
 /*BANNER STYLES*/
@@ -81,6 +111,30 @@ body {
   background-color: #333333;
   color: #fff;
   text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+
+  .banner-mobile {
+    display: block;
+  }
+
+  .blank {
+    height: 180px;
+    background-color: #333333;
+  }
+
+  .banner-text {
+    background-color: #d2d6d9;
+    padding: 1rem;
+  }
+
+  .button {
+    padding: 0.5rem 9rem 0.5rem 0.5rem;
+  }
 }
 
 /* INFORMATION SECTION STYLES*/
@@ -139,6 +193,32 @@ body {
   padding: 16px;
 }
 
+@media only screen and (max-width: 480px) {
+  .secondary-left {
+    display: none;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+
+  .info img {
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  .alternate {
+    background-color: #fff;
+  }
+
+  .info-text {
+    width: 50%;
+    margin-left: -12rem;
+  }
+}
+
 /*LEARNING SECTION*/
 .learning {
   background-color: #d2d6d9;
@@ -189,6 +269,38 @@ body {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .learning {
+    background-color: #fff;
+  }
+
+  #programs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;;
+    align-items: baseline;
+    margin: 0 2rem;
+  }
+
+  .major {
+    background-color: #d2d6d9;
+    margin: 0.5rem auto;
+    width: 100%;
+  }
+
+  .major h4 {
+    padding: 0 2rem;
+  }
+}
+
 /*THESIS STYLES*/
 .thesis {
   width: 100%;
@@ -230,6 +342,16 @@ body {
   padding: 0;
 }
 
+@media only screen and (max-width: 480px) {
+  .thesis-right {
+    display: none;
+  }
+
+  .thesis-left {
+    max-width: 480px;
+  }
+}
+
 /*FOOTER STYLES*/
 footer {
   border-top: 1px solid #d2d6d9;
@@ -248,4 +370,10 @@ footer {
 
 .footer-nav p {
   padding: 0 12px;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer-nav {
+    display: none;
+  }
 }
